@@ -18,7 +18,7 @@ free -h
   stage('Disk-file'){
     steps{
         sh '''
-        df-h
+        df-kh
         '''  
 }
 }
