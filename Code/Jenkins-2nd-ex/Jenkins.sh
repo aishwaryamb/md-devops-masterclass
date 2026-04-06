@@ -1,6 +1,6 @@
-pipeline{
+pipeline {
     agent any 
-    stages{
+    stages {
     stage('uptime'){
     steps{
         sh '''
@@ -9,7 +9,7 @@ pipeline{
     }
     }
   stage('Ram-used'){
-  Steps{
+  steps{
 sh '''
 free -h
 '''
