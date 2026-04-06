@@ -16,8 +16,18 @@ free -h
   }
   } 
      stage('Disk-file'){
+  steps{
+  sh '''
+  df -kh
+  '''
+  }
   }
   stage('Disk-usage'){
+  steps{
+  sh '''
+  du -sh
+  '''
+  }
   }
   stage('poll-scm-checkin'){
     steps{
