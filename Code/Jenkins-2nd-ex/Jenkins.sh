@@ -15,10 +15,14 @@ free -h
 '''
   }
   } 
-  stage('Disk-file'){
+     stage('Disk-file'){
+  }
+  stage('Disk-usage'){
+  }
+  stage('poll-scm-checkin'){
     steps{
         sh '''
-        df -kh
+        echo "checking wheather poll scm works or not"
         '''  
 }
 }
